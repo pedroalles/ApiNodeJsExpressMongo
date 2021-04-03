@@ -10,7 +10,6 @@ app.get('/mila/', (req, res) => {
     res.send("camilinha");
 })
 
-require('./controllers/authController')(app);
-require('./controllers/projectController')(app);
+require('./app/controllers/index')(app);
 
 app.listen(3000);
